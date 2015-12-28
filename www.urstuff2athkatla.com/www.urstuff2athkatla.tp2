@@ -14,7 +14,7 @@ LANGUAGE
   "www.urstuff2athkatla/lang/polish/setup-%WEIDU_OS%.tra"
 													 
 BEGIN @0
-REQUIRE_PREDICATE GAME_IS ~bg2ee eet bg2 tob bgt~ @2
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @2
 
 COPY_EXISTING ar0602.bcs override
   DECOMPILE_AND_PATCH BEGIN
