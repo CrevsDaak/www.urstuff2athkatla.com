@@ -1,5 +1,5 @@
 BACKUP "www.urstuff2athkatla/backup"
-AUTHOR "crevs.daak@gmail.com (https://github.com/CrevsDaak/www.urstuff2athkatla.com)"
+AUTHOR "www.urstuff2athkatla.com or crevs.daak@gmail.com (https://github.com/CrevsDaak/www.urstuff2athkatla.com)"
 VERSION v1.0
 
 LANGUAGE
@@ -15,6 +15,15 @@ LANGUAGE
 													 
 BEGIN @0
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @2
+
+ACTION_IF GAME_IS ~eet~ BEGIN
+  COPY_EXISTING K#TELBGT.bcs override
+    DECOMPILE_AND_PATCH BEGIN
+      REPLACE_TEXTUALLY ~Global("K#DoOnceItemList","LOCALS",0)~ ~False()~
+      REPLACE_TEXTUALLY ~ActionOverride(".+",DropInventory())~ ~~
+    END
+  BUT_ONLY
+END
 
 COPY_EXISTING ar0602.bcs override
   DECOMPILE_AND_PATCH BEGIN
