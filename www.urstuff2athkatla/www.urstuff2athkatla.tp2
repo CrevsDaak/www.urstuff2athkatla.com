@@ -1,10 +1,10 @@
-BACKUP ~weidu_external/www.urstuff2athkatla/backup~
-SUPPORT ~www.urstuff2athkatla.com or crevs.daak@gmail.com (https://github.com/CrevsDaak/www.urstuff2athkatla.com)~
+BACKUP ~weidu_external/backup/www.urstuff2athkatla~
+SUPPORT ~https://github.com/CrevsDaak/www.urstuff2athkatla.com~
 VERSION ~v1.1~
 
 LANGUAGE
   ~english~
-  ~English (it's englusht)~
+  ~English~
   ~www.urstuff2athkatla/lang/english/setup.tra~
 
 LANGUAGE
